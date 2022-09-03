@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %} 
+<h1>Pages</h1>
+
+<p>{{my_text}}</p>
+<h3>{{my_num}}</h3>
+
+<ul>
+    {% for my_sub_item in my_list %}
+    <li>{{forloop.counter}} - {{my_sub_item}}</li>
+    {% endfor %}
+</ul>
+
+
+{%endblock %}

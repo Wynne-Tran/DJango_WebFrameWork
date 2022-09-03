@@ -1,0 +1,9 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %} 
+<h1>Contacts Pages</h1>
+<p> Authenticated {{request.user.is_authenticated}} </p>
+<p> Hello {{request.user}} </p>
+{%endblock %}
