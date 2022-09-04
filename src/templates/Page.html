@@ -5,14 +5,23 @@
 {% block content %} 
 <h1>Pages</h1>
 
-<p>{{my_text}}</p>
+<p>{{my_text | capfirst | upper}}</p>
 <h3>{{my_num}}</h3>
 
 <ul>
-    {% for my_sub_item in my_list %}
-    <li>{{forloop.counter}} - {{my_sub_item}}</li>
+    {% for abc in my_list %}
+        {% if abc == 12 %}
+            <li>{{forloop.counter}} - {{ abc|add:13 }}</li>
+        {% else %}
+            <li>{{forloop.counter}} - {{abc}}</li>
+        {% endif %}
     {% endfor %}
 </ul>
 
+{{html_tag}}
 
+{{html_tag | safe}}
+
+{{html_tag | safe | title}}
+ 
 {%endblock %}
