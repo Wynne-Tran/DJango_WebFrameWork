@@ -11,10 +11,10 @@ class Product(models.Model):
 
 
     def get_absolute_url(self):
-        return f"/product/{self.id}"
+        return f"/products/{self.id}"
 
     # using keyword argument <id: id>
     # reverse url => make url dynamic, when you change url in url.py, app will update automate
     
     # def get_absolute_url(self):
-    #     return reverse("product-detail", kwargs={"id": self.id})
+    #     return reverse("products:product-detail", kwargs={"id": self.id})
