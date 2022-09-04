@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'products',
     'modelExample',
     'pages',
-    'Blog'
+    'Blog',
+    'courses'
     
 ]
 

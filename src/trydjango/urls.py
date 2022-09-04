@@ -33,5 +33,6 @@ urlpatterns = [
     # path('products/', product_list_view, name="product-list"),
     path('products/', include('products.urls')),
     path('blog/', include('Blog.urls')),
+    path('courses/', include('courses.urls')),
 
 ]
